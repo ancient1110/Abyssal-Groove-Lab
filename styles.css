@@ -763,13 +763,26 @@ canvas {
 
 .s-rank-grid {
   margin-bottom: 1.2rem !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
-.s-rank-grid .result-grid > div {
-  background: rgba(40,20,0,0.6) !important;
-  border-color: rgba(180,100,0,0.4) !important;
+.s-rank-grid > div {
+  background: rgba(70,32,0,0.72) !important;
+  border: 1px solid rgba(235,170,40,0.38) !important;
+  border-radius: 8px;
+  padding: 0.5rem;
+  color: #d9ae52;
+  box-shadow: 0 0 12px rgba(255,166,0,0.10);
 }
-.s-rank-grid .result-grid strong {
-  color: #ffd700 !important;
+.s-rank-grid strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+  color: #ffe082 !important;
+  text-shadow: 0 0 10px rgba(255,190,40,0.32);
 }
 
 .s-rank-actions {
@@ -778,21 +791,15 @@ canvas {
   justify-content: center;
 }
 
-.s-save-btn {
+.s-save-btn,
+.s-close-btn {
   background: linear-gradient(135deg, rgba(80,50,0,0.8), rgba(60,30,0,0.9));
   border-color: #ffaa00;
   color: #ffdd88;
   padding: 0.5rem 1.4rem;
 }
-.s-save-btn:hover { box-shadow: 0 0 14px #ffaa0066, 0 0 32px #ffaa0022; }
-
-.s-close-btn {
-  background: linear-gradient(135deg, rgba(50,25,0,0.7), rgba(30,12,0,0.8));
-  border-color: #c87000;
-  color: #c87000;
-  padding: 0.5rem 1.8rem;
-}
-.s-close-btn:hover { box-shadow: 0 0 14px #c8700055; }
+.s-save-btn:hover,
+.s-close-btn:hover { box-shadow: 0 0 14px #ffaa0066, 0 0 32px #ffaa0022; }
 
 /* ─── Responsive ─── */
 @media (max-width: 900px) {
@@ -1130,6 +1137,8 @@ canvas {
   border: 1px solid rgba(100,160,210,0.30) !important;
   border-radius: 8px;
   padding: 0.5rem;
+  color: #9fc3dd;
+  text-shadow: 0 0 10px rgba(170,215,255,0.12);
 }
 .miracle-grid strong {
   display: block;
@@ -1145,7 +1154,8 @@ canvas {
   justify-content: center;
 }
 
-.m-save-btn {
+.m-save-btn,
+.m-close-btn {
   background: linear-gradient(135deg, rgba(10,40,80,0.85), rgba(5,20,45,0.92));
   border: 1px solid #5090c0;
   color: #a8d4f0;
@@ -1157,29 +1167,11 @@ canvas {
   cursor: pointer;
   transition: all 0.2s;
 }
-.m-save-btn:hover {
+.m-save-btn:hover,
+.m-close-btn:hover {
   box-shadow: 0 0 14px rgba(100,170,230,0.50), 0 0 32px rgba(100,170,230,0.18);
   border-color: #88c0e0;
   color: #d8f0ff;
-  transform: translateY(-1px);
-}
-
-.m-close-btn {
-  background: linear-gradient(135deg, rgba(8,25,55,0.80), rgba(4,14,32,0.88));
-  border: 1px solid #3a6890;
-  color: #6a9cbd;
-  padding: 0.5rem 1.8rem;
-  border-radius: 8px;
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 600;
-  font-size: 0.88rem;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.m-close-btn:hover {
-  box-shadow: 0 0 12px rgba(80,140,200,0.35);
-  border-color: #5a90c0;
-  color: #a0c8e8;
   transform: translateY(-1px);
 }
 
