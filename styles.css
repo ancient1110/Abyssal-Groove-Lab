@@ -763,13 +763,26 @@ canvas {
 
 .s-rank-grid {
   margin-bottom: 1.2rem !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
-.s-rank-grid .result-grid > div {
-  background: rgba(40,20,0,0.6) !important;
-  border-color: rgba(180,100,0,0.4) !important;
+.s-rank-grid > div {
+  background: rgba(70,32,0,0.72) !important;
+  border: 1px solid rgba(235,170,40,0.38) !important;
+  border-radius: 8px;
+  padding: 0.5rem;
+  color: #d9ae52;
+  box-shadow: 0 0 12px rgba(255,166,0,0.10);
 }
-.s-rank-grid .result-grid strong {
-  color: #ffd700 !important;
+.s-rank-grid strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+  color: #ffe082 !important;
+  text-shadow: 0 0 10px rgba(255,190,40,0.32);
 }
 
 .s-rank-actions {
@@ -1130,6 +1143,8 @@ canvas {
   border: 1px solid rgba(100,160,210,0.30) !important;
   border-radius: 8px;
   padding: 0.5rem;
+  color: #9fc3dd;
+  text-shadow: 0 0 10px rgba(170,215,255,0.12);
 }
 .miracle-grid strong {
   display: block;
