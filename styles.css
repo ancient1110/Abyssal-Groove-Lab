@@ -1143,6 +1143,8 @@ canvas {
   border: 1px solid rgba(100,160,210,0.30) !important;
   border-radius: 8px;
   padding: 0.5rem;
+  color: #9fc3dd;
+  text-shadow: 0 0 10px rgba(170,215,255,0.12);
 }
 .miracle-grid strong {
   display: block;
