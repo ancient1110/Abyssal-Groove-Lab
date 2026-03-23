@@ -764,12 +764,16 @@ canvas {
 .s-rank-grid {
   margin-bottom: 1.2rem !important;
 }
-.s-rank-grid .result-grid > div {
-  background: rgba(40,20,0,0.6) !important;
-  border-color: rgba(180,100,0,0.4) !important;
+.s-rank-grid > div {
+  background: linear-gradient(180deg, rgba(70,32,0,0.78), rgba(26,10,0,0.88)) !important;
+  border-color: rgba(235,170,40,0.45) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,220,140,0.08),
+    0 0 12px rgba(255,150,0,0.08);
 }
-.s-rank-grid .result-grid strong {
+.s-rank-grid strong {
   color: #ffd700 !important;
+  text-shadow: 0 0 12px rgba(255,180,0,0.3);
 }
 
 .s-rank-actions {
